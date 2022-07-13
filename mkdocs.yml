@@ -1,0 +1,66 @@
+site_name: 'Drone Tutorial'
+site_url: https://kameshsampath.github.com/drone-tutorial
+repo_url: https://github.com/drone-tutorial
+extra:
+  homepage: https://drone.io
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/droneio
+    - icon: fontawesome/brands/github 
+      link: https://github.com/harness/drone
+    - icon: fontawesome/brands/discourse 
+      link: https://discourse.drone.io/
+copyright: Copyright &copy; 2016 - 2022 Harness Inc.,
+theme:
+  name: material
+  logo: assets/images/logo.svg
+  favicon: assets/images/favicon.png
+  language: en
+  font:
+    code: Red Hat Display
+  features:
+    - content.code.annotate
+    - content.tabs.link
+nav:
+  - 'Overview': "index.md"
+  - 'Tools and Sources': "tools-and-sources.md"
+  - 'Environment Setup': "env-setup.md"
+  - 'Drone Desktop': "drone-desktop.md"
+  - "Drone Server": "drone-server.md"
+  - "Clean Up": "clean-up.md"
+  - "Appendix":
+    - "Troubleshooting": "troubleshooting.md"
+markdown_extensions:
+  - toc:
+      title: On this page
+      toc_depth: 3
+      permalink: "&para;"
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - tables
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      linenums_style: pymdownx-inline
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.critic:
+      mode: view
+  - pymdownx.keys
