@@ -33,8 +33,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRed+Hat+Display:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Red Hat Display"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto"}</style>
       
     
     
@@ -60,6 +60,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -226,11 +231,260 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../env-setup/" class="md-nav__link">
-        Environment Setup
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Drone Desktop
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Drone Desktop
       </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ensure-environment" class="md-nav__link">
+    Ensure Environment
+  </a>
+  
+    <nav class="md-nav" aria-label="Ensure Environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drone" class="md-nav__link">
+    Drone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    Docker
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-pipeline" class="md-nav__link">
+    Your first Pipeline
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trusted-mode" class="md-nav__link">
+    Trusted mode
+  </a>
+  
+    <nav class="md-nav" aria-label="Trusted mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploy-local-container-registry" class="md-nav__link">
+    Deploy Local Container Registry
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline" class="md-nav__link">
+    Pipeline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-application" class="md-nav__link">
+    Build Application
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drone-desktop" class="md-nav__link">
+    Drone Desktop
+  </a>
+  
+    <nav class="md-nav" aria-label="Drone Desktop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-drone-desktop-extension" class="md-nav__link">
+    Install Drone Desktop Extension
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-pipelines" class="md-nav__link">
+    Import Pipelines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execute-pipeline" class="md-nav__link">
+    Execute Pipeline
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#including-and-excluding-steps" class="md-nav__link">
+    Including and Excluding Steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Including and Excluding Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#include-steps" class="md-nav__link">
+    Include Steps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exclude-steps" class="md-nav__link">
+    Exclude Steps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#injecting-environment-variables" class="md-nav__link">
+    Injecting Environment Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Injecting Environment Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loading-environment-variables" class="md-nav__link">
+    Loading Environment Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-pipeline" class="md-nav__link">
+    Run Pipeline
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#injecting-secrets" class="md-nav__link">
+    Injecting Secrets
+  </a>
+  
+    <nav class="md-nav" aria-label="Injecting Secrets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loading-secrets" class="md-nav__link">
+    Loading Secrets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-pipeline_1" class="md-nav__link">
+    Run Pipeline
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-pipelines-or-stages" class="md-nav__link">
+    Multiple Pipelines or Stages
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple Pipelines or Stages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-a-stage" class="md-nav__link">
+    Run a Stage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exchange-information-between-steps" class="md-nav__link">
+    Exchange Information Between Steps
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -241,19 +495,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Drone Desktop
+    <li class="md-nav__item">
+      <a href="../env-setup/" class="md-nav__link">
+        Environment Setup
       </a>
-      
     </li>
   
 
@@ -356,6 +602,231 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    Overview
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ensure-environment" class="md-nav__link">
+    Ensure Environment
+  </a>
+  
+    <nav class="md-nav" aria-label="Ensure Environment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#drone" class="md-nav__link">
+    Drone
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker" class="md-nav__link">
+    Docker
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-pipeline" class="md-nav__link">
+    Your first Pipeline
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trusted-mode" class="md-nav__link">
+    Trusted mode
+  </a>
+  
+    <nav class="md-nav" aria-label="Trusted mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploy-local-container-registry" class="md-nav__link">
+    Deploy Local Container Registry
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pipeline" class="md-nav__link">
+    Pipeline
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#build-application" class="md-nav__link">
+    Build Application
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#drone-desktop" class="md-nav__link">
+    Drone Desktop
+  </a>
+  
+    <nav class="md-nav" aria-label="Drone Desktop">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#install-drone-desktop-extension" class="md-nav__link">
+    Install Drone Desktop Extension
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#import-pipelines" class="md-nav__link">
+    Import Pipelines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#execute-pipeline" class="md-nav__link">
+    Execute Pipeline
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#including-and-excluding-steps" class="md-nav__link">
+    Including and Excluding Steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Including and Excluding Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#include-steps" class="md-nav__link">
+    Include Steps
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exclude-steps" class="md-nav__link">
+    Exclude Steps
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#injecting-environment-variables" class="md-nav__link">
+    Injecting Environment Variables
+  </a>
+  
+    <nav class="md-nav" aria-label="Injecting Environment Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loading-environment-variables" class="md-nav__link">
+    Loading Environment Variables
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-pipeline" class="md-nav__link">
+    Run Pipeline
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#injecting-secrets" class="md-nav__link">
+    Injecting Secrets
+  </a>
+  
+    <nav class="md-nav" aria-label="Injecting Secrets">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loading-secrets" class="md-nav__link">
+    Loading Secrets
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#run-pipeline_1" class="md-nav__link">
+    Run Pipeline
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-pipelines-or-stages" class="md-nav__link">
+    Multiple Pipelines or Stages
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple Pipelines or Stages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#run-a-stage" class="md-nav__link">
+    Run a Stage
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exchange-information-between-steps" class="md-nav__link">
+    Exchange Information Between Steps
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -374,7 +845,428 @@
 
   <h1>Drone Desktop</h1>
 
-<p><strong>TODO</strong> All exercises related to Drone Desktop</p>
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
+<p>By the end of this chapter you will be able to,</p>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Understand the structure of <code>.drone.yml</code></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Create your first Drone pipeline</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Run your Drone pipeline using <code>drone</code> CLI</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Run your drone pipeline using Drone Desktop <mark class="critic"> TODO </mark></li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Build and push a container image to local container registry</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Using environment variables with pipelines</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Using secrets with pipelines</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Understanding Plugins and Services</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled checked/><span class="task-list-indicator"></span></label> Mounting Volumes from the Docker host</li>
+</ul>
+<h2 id="ensure-environment">Ensure Environment<a class="headerlink" href="#ensure-environment" title="Permanent link">&para;</a></h2>
+<p>Before getting started let us ensure we have the requried tools on our path</p>
+<h3 id="drone">Drone<a class="headerlink" href="#drone" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>drone --version
+</code></pre></div>
+<p>The command should show an output like <code>v1.5.0</code>.</p>
+<h3 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>docker --version
+</code></pre></div>
+<p>The command should show an output like <code>Docker version 20.10.16, build aa7e414</code></p>
+<h2 id="your-first-pipeline">Your first Pipeline<a class="headerlink" href="#your-first-pipeline" title="Permanent link">&para;</a></h2>
+<p>In order get the feel of <code>drone</code> let us run create and run our very first pipeline.</p>
+<p>Navigate to work folder</p>
+<div class="highlight"><pre><span></span><code>mkdir -p <span class="nv">$PROJECT_HOME</span>/work/first-pipeline
+<span class="nb">cd</span> <span class="nv">$PROJECT_HOME</span>/work/first-pipeline
+</code></pre></div>
+<p>Create file <code>.drone.yml</code> with the following content,</p>
+<div class="highlight"><span class="filename">.drone.yml</span><pre><span></span><code><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pipeline</span><span class="w"></span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"></span>
+
+<span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">say hello</span><span class="w"></span>
+<span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">busybox</span><span class="w"></span>
+<span class="w">  </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &#39;Hello World&#39;</span><span class="w"></span>
+</code></pre></div>
+<p>Let us run our first pipeline,</p>
+<div class="highlight"><pre><span></span><code>drone <span class="nb">exec</span>
+</code></pre></div>
+<p>The command should run our pipeline and shown an output like,</p>
+<div class="highlight"><pre><span></span><code>[say hello:0] + echo &#39;Hello World&#39;
+[say hello:1] Hello World
+</code></pre></div>
+<p><strong>Congratulations!</strong>. You have successfully run your first pipeline.</p>
+<p>Pipeline <strong>steps</strong> are run sequentially. Let us add another step to our pipeline as shown,</p>
+<div class="highlight"><span class="filename">.drone.yml</span><pre><span></span><code><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pipeline</span><span class="w"></span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"></span>
+
+<span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">say hello</span><span class="w"></span>
+<span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">busybox</span><span class="w"></span>
+<span class="w">  </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &#39;Hello World&#39;</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">good bye</span><span class="w"></span>
+<span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">busybox</span><span class="w"></span>
+<span class="w">  </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &#39;Good bye&#39;</span><span class="w"></span>
+</code></pre></div>
+<p>Try running the <code>drone exec</code> command again to see the output as shown,</p>
+<div class="highlight"><pre><span></span><code>[say hello:0] + echo &#39;Hello World&#39;
+[say hello:1] Hello World
+[good bye:0] + echo &#39;Good bye&#39;
+[good bye:1] Good bye
+</code></pre></div>
+<h2 id="trusted-mode">Trusted mode<a class="headerlink" href="#trusted-mode" title="Permanent link">&para;</a></h2>
+<p>Trusted mode instructs <code>drone</code> to run in trusted mode typically with extra privileges. When to use <strong>trusted</strong> mode ? Lets take an example of building and pushing our application as a container image to local registry. In order to do that we need:</p>
+<ul>
+<li>An application, with Dockerfile to build the container image</li>
+<li>A local container registry, where the built image will be pushed</li>
+</ul>
+<p>As part of the tutorial we have an <code>$TUTORIAL_HOME/apps</code> folder that has various exercise sources/demos, that we will be using through out this tutorial. For this exercise we will be using  <code>$TUTORIAL_HOME/apps/hello-go</code>.</p>
+<p>Let us navigate to that folder,</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> <span class="nv">$TUTORIAL_HOME</span>/apps/hello-go
+</code></pre></div>
+<h3 id="deploy-local-container-registry">Deploy Local Container Registry<a class="headerlink" href="#deploy-local-container-registry" title="Permanent link">&para;</a></h3>
+<p>Before we execute the pipeline we need to start a <a href="https://docs.docker.com/registry/">local container registry</a>, run the following command to start one locally,</p>
+<div class="highlight"><pre><span></span><code>docker run -d -p <span class="m">5001</span>:5000 --name registry registry:2
+</code></pre></div>
+<p>You can verify if the registry is started using the <code>docker ps</code> command.</p>
+<div class="highlight"><pre><span></span><code>docker ps --filter <span class="nv">name</span><span class="o">=</span>registry
+</code></pre></div>
+<p>The command should return an output like,</p>
+<div class="highlight"><pre><span></span><code>CONTAINER ID   IMAGE        COMMAND                  CREATED          STATUS          PORTS                    NAMES
+673c375aca50   registry:2   <span class="s2">&quot;/entrypoint.sh /etc…&quot;</span>   <span class="m">41</span> minutes ago   Up <span class="m">41</span> minutes   <span class="m">0</span>.0.0.0:5001-&gt;5000/tcp   registry
+</code></pre></div>
+<h3 id="pipeline">Pipeline<a class="headerlink" href="#pipeline" title="Permanent link">&para;</a></h3>
+<p>Let us analyse the Drone pipeline of our app,</p>
+<div class="highlight"><span class="filename">.drone.yml</span><pre><span></span><code><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pipeline</span><span class="w"></span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"></span>
+
+<span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">build-image</span><span class="w"></span>
+<span class="w">  </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">plugins/docker</span><span class="w"></span>
+<span class="w">  </span><span class="nt">settings</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">localhost:5001/example/hello-go</span><span class="w"></span>
+<span class="w">    </span><span class="nt">insecure</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">  </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker-sock</span><span class="w"></span>
+<span class="w">      </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/run/docker.sock</span><span class="w"></span>
+
+<span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker-sock</span><span class="w"></span>
+<span class="w">  </span><span class="nt">host</span><span class="p">:</span><span class="w"></span>
+<span class="w">   </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/var/run/docker.sock</span><span class="w"></span>
+</code></pre></div>
+<p>It is a simple one step pipeline that builds the go application using the <em>Dockerfile</em>:</p>
+<div class="highlight"><span class="filename">Dockerfile</span><pre><span></span><code><span class="c">#syntax=docker/dockerfile:1.3-labs</span>
+
+<span class="k">FROM</span><span class="w"> </span><span class="s">golang:1.18-alpine</span>
+<span class="k">ARG</span><span class="w"> </span>TARGETARCH
+
+<span class="k">ENV</span><span class="w"> </span><span class="nv">CGO_ENABLED</span><span class="o">=</span><span class="m">0</span>
+
+<span class="k">RUN</span><span class="w"> </span>apk add --update
+
+<span class="k">WORKDIR</span><span class="w"> </span><span class="s">/build</span>
+
+<span class="k">COPY</span><span class="w"> </span>. .
+
+<span class="k">RUN</span><span class="w"> </span>--mount<span class="o">=</span><span class="nv">type</span><span class="o">=</span>cache,target<span class="o">=</span>/go/pkg/mod <span class="se">\</span>
+    --mount<span class="o">=</span><span class="nv">type</span><span class="o">=</span>cache,target<span class="o">=</span>/root/.cache/go-build <span class="se">\</span>
+    <span class="nv">GOOS</span><span class="o">=</span>linux <span class="nv">GOARCH</span><span class="o">=</span><span class="si">${</span><span class="nv">TARGETARCH</span><span class="si">}</span> go build -o server server.go
+
+<span class="k">CMD</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="s2">&quot;/build/server&quot;</span><span class="w"> </span><span class="p">]</span>
+</code></pre></div>
+<p>And pushes the image to local container registry <code>localhost:5001</code> as <em>localhost:5001/example/hello-go</em>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The docker build is done using Drone <strong>Plugins</strong>, we will talk more about it in upcoming chapters</p>
+</div>
+<p><mark class="critic"><strong>TODO:</strong> Add more explanation </mark></p>
+<p>But to push to the local container registry we need the handle to the docker socket of the host which is usually the file <code>/var/run/docker.sock</code>. We add the handle in our pipeline using the <code>volume</code> mounts. As we are mounting the host file into the container its expected to instruct Drone to run in <strong>trusted</strong> mode to add extra privileges to the step containers.</p>
+<h3 id="build-application">Build Application<a class="headerlink" href="#build-application" title="Permanent link">&para;</a></h3>
+<p>Build and push the image by running the command,</p>
+<div class="highlight"><pre><span></span><code>drone <span class="nb">exec</span> --trusted
+</code></pre></div>
+<p>Once the pipeline is successful, you can test the built image by running the following command,</p>
+<div class="highlight"><pre><span></span><code>docker run --rm -p8080:8080 localhost:5001/example/hello-go
+</code></pre></div>
+<p>Now doing a <code>curl localhost:8080</code> should return a response <strong>Hello, World!</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Plugins</p>
+<p>When we built the container image we used image called <code>plugins/docker</code> with custom settings what is that? It is a <strong>Drone Plugin</strong>.</p>
+<p>Plugins are pre-defined set of commands which is packed as a container image. Plugins are reusable and the parameters to the plugin commands are passed using <em>settings</em> block.</p>
+<p>Please check <a href="https://plugins.drone.io">Drone Plugins</a> for a list of available plugins.</p>
+</div>
+<h2 id="drone-desktop">Drone Desktop<a class="headerlink" href="#drone-desktop" title="Permanent link">&para;</a></h2>
+<p>Until now we saw how to execute the pipelines from command line. Drone Desktop is a <a href="https://docs.docker.com/desktop/extensions/">Docker Desktop Extension</a> that allows you import and run pipelines from within Docker Desktop.</p>
+<h3 id="install-drone-desktop-extension">Install Drone Desktop Extension<a class="headerlink" href="#install-drone-desktop-extension" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># volume used by Drone Desktop</span>
+docker volume create drone-desktop-data
+docker extension install docker.io/kameshsampath/drone-desktop-extension:v1.0.3
+</code></pre></div>
+<p>If your install is successful you should see the <strong>Drone Desktop</strong> extension in the Docker Desktop as shown,</p>
+<p><img alt="Drone Desktop" src="../assets/images/drone-desktop.png" /></p>
+<h3 id="import-pipelines">Import Pipelines<a class="headerlink" href="#import-pipelines" title="Permanent link">&para;</a></h3>
+<p>You can search and import pipelines into Drone Desktop,</p>
+<p><img alt="Drone Desktop" src="../assets/images/drone_desktop_feature_import.gif" /></p>
+<h3 id="execute-pipeline">Execute Pipeline<a class="headerlink" href="#execute-pipeline" title="Permanent link">&para;</a></h3>
+<p><mark class="critic"> TODO: Update this section once we have the feature added to Drone Desktop </mark></p>
+<h2 id="including-and-excluding-steps">Including and Excluding Steps<a class="headerlink" href="#including-and-excluding-steps" title="Permanent link">&para;</a></h2>
+<p>Drone allows you to include and exclude steps of the pipeline at execution time. </p>
+<p>Let us navigate to the exercise folder,</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> <span class="nv">$TUTORIAL_HOME</span>/apps/greeting
+</code></pre></div>
+<p>Let us analyse the Drone pipeline that we will use for this exercise, it is simple greeter application that says <strong>hello world</strong> in multiple languages.</p>
+<div class="highlight"><span class="filename">.drone.yml</span><pre><span></span><code><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pipeline</span><span class="w"></span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"></span>
+
+<span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="hll"><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">english</span><span class="w"></span>
+</span><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alpine</span><span class="w"></span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo hello world</span><span class="w"></span>
+
+<span class="hll"><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">french</span><span class="w"></span>
+</span><span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alpine</span><span class="w"></span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo bonjour monde</span><span class="w"></span>
+
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hindi</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alpine</span><span class="w"></span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo नमस्ते दुनिया</span><span class="w"></span>
+
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">japanese</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alpine</span><span class="w"></span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo こんにちは世界</span><span class="w"></span>
+</code></pre></div>
+<h3 id="include-steps">Include Steps<a class="headerlink" href="#include-steps" title="Permanent link">&para;</a></h3>
+<p>Let us assume that we want to greet in <em>English</em> and <em>French</em> i.e. run only the steps <strong>english</strong> and <strong>french</strong>. To do that run the following command,</p>
+<div class="highlight"><pre><span></span><code>drone <span class="nb">exec</span> --include<span class="o">=</span>english --include<span class="o">=</span>french
+</code></pre></div>
+<p>A successful run will shown an output like,</p>
+<div class="highlight"><pre><span></span><code>[english:0] + echo hello world
+[english:1] hello world
+[french:0] + echo bonjour monde
+[french:1] bonjour monde
+</code></pre></div>
+<h3 id="exclude-steps">Exclude Steps<a class="headerlink" href="#exclude-steps" title="Permanent link">&para;</a></h3>
+<p>Excluding steps works in a similar way as that of include but with exclude we specify the steps to be excluded. Say we want to exclude <strong>hindi</strong> and <strong>japanese</strong> steps from our pipeline run, to do that run the <code>drone</code> command as shown,</p>
+<div class="highlight"><pre><span></span><code>drone <span class="nb">exec</span> --exclude<span class="o">=</span>hindi --exclude<span class="o">=</span>japanese
+</code></pre></div>
+<p>A successful run will shown an output like,</p>
+<div class="highlight"><pre><span></span><code>[english:0] + echo hello world
+[english:1] hello world
+[french:0] + echo bonjour monde
+[french:1] bonjour monde
+</code></pre></div>
+<h2 id="injecting-environment-variables">Injecting Environment Variables<a class="headerlink" href="#injecting-environment-variables" title="Permanent link">&para;</a></h2>
+<p>In many cases we might need to load few settings from environment variables or files, <code>drone</code> provides an option called <code>--env-file</code> that allows to load the environment variable(s) which can then be used within step containers.</p>
+<p>Let us navigate to the exercise folder,</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> <span class="nv">$TUTORIAL_HOME</span>/apps/env-greeting
+</code></pre></div>
+<p>Let us analyse the pipeline file,</p>
+<div class="highlight"><span class="filename">.drone.yml</span><pre><span></span><code><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pipeline</span><span class="w"></span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"></span>
+
+<span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">english</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alpine</span><span class="w"></span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="hll"><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo $GREETING_MESSAGE</span><span class="w"></span>
+</span></code></pre></div>
+<h3 id="loading-environment-variables">Loading Environment Variables<a class="headerlink" href="#loading-environment-variables" title="Permanent link">&para;</a></h3>
+<p>As you notice the pipeline step <em>english</em> prints the value <code>${GREETING_MESSAGE}</code>. The variable <code>${GREETING_MESSAGE}</code> loaded from the file <code>my-env</code>.</p>
+<div class="highlight"><span class="filename">my-env</span><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">GREETING_MESSAGE=Hello, World!</span><span class="w"></span>
+</code></pre></div>
+<h3 id="run-pipeline">Run Pipeline<a class="headerlink" href="#run-pipeline" title="Permanent link">&para;</a></h3>
+<p>In order for the steps to use <code>${GREETING_MESSAGE}</code> as environment variable, we use the <code>--env-file</code> option of the <code>drone</code> command to load <code>my-env</code> into the step container.</p>
+<p>Now run the pipeline,</p>
+<div class="highlight"><pre><span></span><code>drone <span class="nb">exec</span> --env-file<span class="o">=</span>my-env 
+</code></pre></div>
+<p>The pipeline execution will show an output like,</p>
+<div class="highlight"><pre><span></span><code>[english:0] + echo $GREETING_MESSAGE
+[english:1] Hello, World!
+</code></pre></div>
+<h2 id="injecting-secrets">Injecting Secrets<a class="headerlink" href="#injecting-secrets" title="Permanent link">&para;</a></h2>
+<p>Drone also allows to load few settings from secrets, <code>drone</code> provides an option called <code>--secret-file</code> with which we can load the secrets as environment variables and use them in our steps.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Secrets are masked in pipeline logs</p>
+</div>
+<p>Navigate to the exercise folder,</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> <span class="nv">$TUTORIAL_HOME</span>/apps/using-secrets
+</code></pre></div>
+<p>Let us analyse the pipeline file,</p>
+<div class="highlight"><span class="filename">.drone.yml</span><pre><span></span><code><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pipeline</span><span class="w"></span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"></span>
+
+<span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">what is today?</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres:14.4-alpine</span><span class="w"></span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sleep 10</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">psql --host=$PGHOST --port=$PGPORT -w -c &#39;SELECT NOW() as TODAY;&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">PGHOST</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres</span><span class="w"></span>
+<span class="w">      </span><span class="nt">PGPORT</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5432</span><span class="w"></span>
+<span class="w">      </span><span class="nt">PGDATABASE</span><span class="p">:</span><span class="w"></span>
+<span class="hll"><span class="w">        </span><span class="nt">from_secret</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres_db</span><span class="w"></span>
+</span><span class="w">      </span><span class="nt">PGUSER</span><span class="p">:</span><span class="w"></span>
+<span class="hll"><span class="w">        </span><span class="nt">from_secret</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres_user</span><span class="w"></span>
+</span><span class="w">      </span><span class="nt">PGPASSWORD</span><span class="p">:</span><span class="w"> </span>
+<span class="hll"><span class="w">        </span><span class="nt">from_secret</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres_password</span><span class="w"></span>
+</span><span class="w">      </span><span class="nt">PGDATABASE</span><span class="p">:</span><span class="w"></span>
+<span class="hll"><span class="w">        </span><span class="nt">from_secret</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres_db</span><span class="w"></span>
+</span>
+<span class="nt">services</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres:14.4-alpine</span><span class="w"></span>
+<span class="w">    </span><span class="nt">environment</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">POSTGRES_DB</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">from_secret</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres_db</span><span class="w"></span>
+<span class="w">      </span><span class="nt">POSTGRES_USER</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nt">from_secret</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres_user</span><span class="w"></span>
+<span class="w">      </span><span class="nt">POSTGRES_PASSWORD</span><span class="p">:</span><span class="w"> </span>
+<span class="w">        </span><span class="nt">from_secret</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">postgres_password</span><span class="w"></span>
+</code></pre></div>
+<p>As you have noted from the highlighted line, we inject the environment variable called <code>PGDATABASE</code> with value from secret <code>postgres_db</code> using a special <code>drone</code> attribute named <strong>from_secret</strong>.The <strong>from_secret</strong> attribute value maps to the secret key that gets loaded using <code>--secret-file</code> option.</p>
+<h3 id="loading-secrets">Loading Secrets<a class="headerlink" href="#loading-secrets" title="Permanent link">&para;</a></h3>
+<p>As you notice the pipeline step <em>what is today?</em> runs a <code>psql</code> command that selects the current date using the SQL query <code>SELECT NOW()</code>.</p>
+<p>To <code>psql</code> command expects the environment variables:</p>
+<ul>
+<li>PGHOST</li>
+<li>PGPORT</li>
+<li>PGDATABASE</li>
+<li>PGUSER</li>
+<li>PGPASSWORD</li>
+</ul>
+<p>We define <em>PGHOST</em>,<em>PGPORT</em> as plain text values in the <strong>environment</strong> block,  whereas <em>PGDATABASE</em>,<em>PGUSER</em>,<em>PGPASSWORD</em> are loaded from the secret file <code>secret.txt</code>.</p>
+<div class="highlight"><span class="filename">secret.txt</span><pre><span></span><code><span class="l l-Scalar l-Scalar-Plain">postgres_db=demodb</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">postgres_user=postgress</span><span class="w"></span>
+<span class="l l-Scalar l-Scalar-Plain">postgres_password=pa55Word!</span><span class="w"></span>
+</code></pre></div>
+<h3 id="run-pipeline_1">Run Pipeline<a class="headerlink" href="#run-pipeline_1" title="Permanent link">&para;</a></h3>
+<p>Now run the pipeline,</p>
+<div class="highlight"><pre><span></span><code>drone <span class="nb">exec</span> --secret-file<span class="o">=</span>secret.txt
+</code></pre></div>
+<p>The pipeline execution will show an output like ( output trimmed for brevity),</p>
+<div class="highlight"><pre><span></span><code>...
+[what is today?:1] + psql --host=$PGHOST --port=$PGPORT -w -c &#39;SELECT NOW() as TODAY;&#39;
+[what is today?:2]              today
+[what is today?:3] -------------------------------
+[what is today?:4]  2022-07-19 06:48:05.497789+00
+[what is today?:5] (1 row)
+[what is today?:6]
+...
+</code></pre></div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>For this demo we add the secret.txt git, but for production scenarios make sure the file name or pattern is added to <code>.gitingore</code></p>
+</div>
+<h2 id="multiple-pipelines-or-stages">Multiple Pipelines or Stages<a class="headerlink" href="#multiple-pipelines-or-stages" title="Permanent link">&para;</a></h2>
+<p>A <code>drone</code> pipeline <code>.drone.yml</code> can have multiple pipelines a.k.a <strong>stages</strong>. EAch stage is its own YAML document. The <code>drone</code> command has an option called <code>--pipeline</code> that allows you to invoke the required stage,</p>
+<p>Let us navigate to the exercise folder,</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> <span class="nv">$TUTORIAL_HOME</span>/apps/multiple-stages
+</code></pre></div>
+<p>As you see form the pipeline file, it has four stages namely <em>english,french,hindi and japanese</em>.</p>
+<div class="highlight"><span class="filename">.drone.yml</span><pre><span></span><code><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pipeline</span><span class="w"></span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">english</span><span class="w"></span>
+
+<span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">greeting</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alpine</span><span class="w"></span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo hello world</span><span class="w"></span>
+<span class="nn">---</span><span class="w"></span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pipeline</span><span class="w"></span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">french</span><span class="w"></span>
+
+<span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">greeting</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alpine</span><span class="w"></span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo bonjour monde</span><span class="w"></span>
+<span class="nn">---</span><span class="w"></span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pipeline</span><span class="w"></span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hindi</span><span class="w"></span>
+
+<span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">greeting</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alpine</span><span class="w"></span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo नमस्ते दुनिया</span><span class="w"></span>
+
+<span class="nn">---</span><span class="w"></span>
+<span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pipeline</span><span class="w"></span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">japanese</span><span class="w"></span>
+
+<span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">greeting</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">alpine</span><span class="w"></span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo こんにちは世界</span><span class="w"></span>
+</code></pre></div>
+<h3 id="run-a-stage">Run a Stage<a class="headerlink" href="#run-a-stage" title="Permanent link">&para;</a></h3>
+<p>Let us say you want to run the <em>japanese</em> stage of the pipeline,</p>
+<div class="highlight"><pre><span></span><code>drone <span class="nb">exec</span> --pipeline<span class="o">=</span>japanese
+</code></pre></div>
+<p>The command should shown an output like,</p>
+<div class="highlight"><pre><span></span><code>[greeting:0] + echo こんにちは世界
+[greeting:1] こんにちは世界
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Services</p>
+<p>As you noticed we used new configuration block in the pipline called <em>services</em>. Services are detached containers that are not part of your step but will be used by steps. These containers are killed automatically after the pipeline execution ends.</p>
+</div>
+<h2 id="exchange-information-between-steps">Exchange Information Between Steps<a class="headerlink" href="#exchange-information-between-steps" title="Permanent link">&para;</a></h2>
+<p>The pipeline does not run independently, each step produces some output that may be used by the next step(s). The easiest way to exchange information between steps is using Volume mounts,</p>
+<p>Navigate to the exercise folder <code>$TUTORIAL_HOME/apps/exchange-info</code>,</p>
+<p>Let us check the pipeline file,</p>
+<div class="highlight"><span class="filename">.drone.yml</span><pre><span></span><code><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pipeline</span><span class="w"></span>
+<span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">docker</span><span class="w"></span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">default</span><span class="w"></span>
+
+<span class="nt">steps</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">store-message</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">busybox</span><span class="w"></span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">echo &#39;Hello, World!&#39; &gt; /data/message.txt</span><span class="w"></span>
+<span class="hll"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+</span><span class="hll"><span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data-vol</span><span class="w"></span>
+</span><span class="hll"><span class="w">       </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/data</span><span class="w"></span>
+</span><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">show-message</span><span class="w"></span>
+<span class="w">    </span><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">busybox</span><span class="w"></span>
+<span class="w">    </span><span class="nt">commands</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cat /data/message.txt</span><span class="w"></span>
+<span class="hll"><span class="w">    </span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+</span><span class="hll"><span class="w">     </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data-vol</span><span class="w"></span>
+</span><span class="hll"><span class="w">       </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/data</span><span class="w"></span>
+</span><span class="nt">volumes</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data-vol</span><span class="w"></span>
+<span class="w">    </span><span class="nt">temp</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span><span class="w"></span>
+</code></pre></div>
+<p>As you noticed both the steps <em>store-message</em> and <em>show-message</em> mounts a Volume on same path <code>/data</code>. The <em>store-message</em> writes an output to the file <code>/data/message.txt</code> which is then read and displayed by the next step <em>show-message</em>.</p>
+<p>Run the pipeline to see it in action,</p>
+<div class="highlight"><pre><span></span><code>drone <span class="nb">exec</span>
+</code></pre></div>
+<p>A successful pipeline execution will show the following output,</p>
+<div class="highlight"><pre><span></span><code>[store-message:0] + echo &#39;Hello, World!&#39; &gt; /data/message.txt
+[show-message:0] + cat /data/message.txt
+[show-message:1] Hello, World!
+</code></pre></div>
+<p>Navigate back to <code>$TUTORIAL_HOME</code> before starting to work on the next set of exercises.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> <span class="nv">$TUTORIAL_HOME</span>
+</code></pre></div>
 
               
             </article>
@@ -392,7 +1284,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
-        <a href="../env-setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Environment Setup" rel="prev">
+        <a href="../tools-and-sources/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tools and Sources" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -401,20 +1293,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Environment Setup
+              Tools and Sources
             </div>
           </div>
         </a>
       
       
         
-        <a href="../drone-server/" class="md-footer__link md-footer__link--next" aria-label="Next: Drone Server" rel="next">
+        <a href="../env-setup/" class="md-footer__link md-footer__link--next" aria-label="Next: Environment Setup" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Drone Server
+              Environment Setup
             </div>
           </div>
           <div class="md-footer__button md-icon">
