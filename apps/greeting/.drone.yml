@@ -1,0 +1,24 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: english
+    image: alpine
+    commands:
+      - echo hello world
+
+  - name: french
+    image: alpine
+    commands:
+      - echo bonjour monde
+
+  - name: hindi
+    image: alpine
+    commands:
+      - echo नमस्ते दुनिया
+
+  - name: japanese
+    image: alpine
+    commands:
+      - echo こんにちは世界

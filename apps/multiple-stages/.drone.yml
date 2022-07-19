@@ -1,0 +1,40 @@
+kind: pipeline
+type: docker
+name: english
+
+steps:
+  - name: greeting
+    image: alpine
+    commands:
+      - echo hello world
+---
+kind: pipeline
+type: docker
+name: french
+
+steps:
+  - name: greeting
+    image: alpine
+    commands:
+      - echo bonjour monde
+---
+kind: pipeline
+type: docker
+name: hindi
+
+steps:
+  - name: greeting
+    image: alpine
+    commands:
+      - echo नमस्ते दुनिया
+
+---
+kind: pipeline
+type: docker
+name: japanese
+
+steps:
+  - name: greeting
+    image: alpine
+    commands:
+      - echo こんにちは世界

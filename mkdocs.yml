@@ -17,15 +17,15 @@ theme:
   favicon: assets/images/favicon.png
   language: en
   font:
-    code: Red Hat Display
+    code: Roboto
   features:
     - content.code.annotate
     - content.tabs.link
 nav:
   - 'Overview': "index.md"
   - 'Tools and Sources': "tools-and-sources.md"
-  - 'Environment Setup': "env-setup.md"
   - 'Drone Desktop': "drone-desktop.md"
+  - 'Environment Setup': "env-setup.md"
   - "Drone Server": "drone-server.md"
   - "Clean Up": "clean-up.md"
   - "Appendix":

@@ -1,0 +1,22 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: store-message
+    image: busybox
+    commands:
+      - echo 'Hello, World!' > /data/message.txt
+    volumes:
+     - name: data-vol
+       path: /data
+  - name: show-message
+    image: busybox
+    commands:
+      - cat /data/message.txt
+    volumes:
+     - name: data-vol
+       path: /data
+volumes:
+  - name: data-vol
+    temp: {}

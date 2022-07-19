@@ -1,0 +1,32 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: what is today?
+    image: postgres:14.4-alpine
+    commands:
+      - sleep 10
+      - psql --host=$PGHOST --port=$PGPORT -w -c 'SELECT NOW() as TODAY;'
+    environment:
+      PGHOST: postgres
+      PGPORT: 5432
+      PGDATABASE:
+        from_secret: postgres_db
+      PGUSER:
+        from_secret: postgres_user
+      PGPASSWORD: 
+        from_secret: postgres_password
+      PGDATABASE:
+        from_secret: postgres_db
+
+services:
+  - name: postgres
+    image: postgres:14.4-alpine
+    environment:
+      POSTGRES_DB:
+        from_secret: postgres_db
+      POSTGRES_USER:
+        from_secret: postgres_user
+      POSTGRES_PASSWORD: 
+        from_secret: postgres_password

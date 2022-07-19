@@ -72,3 +72,6 @@ edge-files
 !.envrc.j2
 bin/kubectl
 .direnv
+work/**
+!work/README.txt
+!apps/env-greeting/.env

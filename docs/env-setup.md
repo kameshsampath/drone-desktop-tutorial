@@ -6,4 +6,4 @@ authors:
 date: 2022-07-13
 ---
 
-__TODO__ The environment setup required for running this tutorial
+

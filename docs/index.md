@@ -1,6 +1,6 @@
 # Welcome to Drone Tutorial
 
-## Highlighting 
+## Highlighting
 
 {==REMOVE THE SECTION BELOW AFTER TUTORIAL IS COMPLETE.==}
 

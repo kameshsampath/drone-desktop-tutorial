@@ -6,4 +6,19 @@ authors:
 date: 2022-07-13
 ---
 
-__TODO__ Add all tools and resources that will be required by this tutorial 
+---8<--- "includes/tools.md"
+
+## Download the Sources
+
+Let us clone the tutorial sources,
+
+```shell
+git clone https://github.com/kameshsampath/drone-tutorial
+cd drone-tutorial
+```
+
+For rest of the tutorial we will call our tutorial folder as `$TUTORIAL_HOME`,
+
+```shell
+export TUTORIAL_HOME="${PWD}"
+```

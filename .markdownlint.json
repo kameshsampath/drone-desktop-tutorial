@@ -1,0 +1,6 @@
+{
+  "default": true,
+  "no-duplicate-header": false,
+  "line-length": false,
+  "code-block-style": false
+}

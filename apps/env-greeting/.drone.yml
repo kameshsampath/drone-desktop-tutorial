@@ -1,0 +1,9 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: english
+    image: alpine
+    commands:
+      - echo $GREETING_MESSAGE
